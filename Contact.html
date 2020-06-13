@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html>
+<body>
+<h1 style="font-family:verdana;">Contact page</h1>
+<p style="font-family:verdana;">If you need help with the bot you can contact me via Discord</p>
+<style>
+/* This adds the background image and stretches it to fit the screen */
+body {
+  background-image: url('fbgl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* This is change the location of the header and text */
+h1 {
+	position:absolute;
+	top: 10px;
+	left: 50px;
+}
+p {
+	position:absolute;
+	top: 60px;
+	left: 53px;
+}
+/* This is to customize the buttons - more on the homepage comments */
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #009afe;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  position:absolute;
+  top: 238px;
+  left: 53px;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button1:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button1:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.button2 {
+  background-color: #009afe;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  position:absolute;
+  top: 575px;
+  left: 1075px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button2:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+widgetbot {
+  position:absolute;
+  top: 100px;
+  left: 475px;
+}
+</style>
+<button class="button button1"; onclick="document.location = 'https://discord.gg/fJMdFvm'">Join the support server</button>
+<button class="button button2"; onclick="document.location = 'Frysta-Homepage.html'">Back to homepage</button>
+<!--This is to add a discord embed - so users can ask from the website-->
+<widgetbot
+  server="703687777644052490"
+  channel="717096956073214062"
+  width="800"
+  height="430"
+  shard="https://e.widgetbot.io"
+></widgetbot>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+</body>
+</html>

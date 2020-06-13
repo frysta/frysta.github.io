@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html>
+<body>
+<style>
+/* This adds the background image and stretches it to fit the screen */
+body {
+  background-image: url('fbgl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* This defines the location of the header and paragraph */
+h1 {
+	position:absolute;
+	top: 60px;
+	left: 100px;
+}
+p {
+	position:absolute;
+	top: 140px;
+	left: 103px;
+}
+/* This defines the location of the image */
+img {
+	position:absolute;
+	top: 175px;
+	left: 740px;
+}
+/* This is for customising a button to make it look a certain way */
+.button {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/* This is to make the button a colour and to make it a rounded rectangle shape */
+.button1 {
+  background-color: #6eceff;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 25px;
+  position:absolute;
+  top: 38px;
+  left: 750px;
+}
+/* This is for to change the colours of a button when it is hovered over */
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+/* This is for customising the borders that pop up when the button is clicked */
+.button1:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button1:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* This is repeated to style other buttons */
+.button2 {
+  background-color: #6eceff;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 25px;
+  position:absolute;
+  top: 38px;
+  left: 875px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button2:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.button3 {
+  background-color: #6eceff;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 25px;
+  position:absolute;
+  top: 38px;
+  left: 1040px;
+}
+
+.button3:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button3:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button3:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.button4 {
+  background-color: #009afe;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  position:absolute;
+  top: 238px;
+  left: 100px;
+}
+
+.button4:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button4:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button4:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+</style>
+<!--This is making the text a certain size and font-->
+<h1 style="font-family:verdana; color:white; font-size:50px">Frysta</h1>
+<p style="font-family:verdana; color:black; font-size:20px">Frysta is a Frozen 2 themed discord bot</p>
+<button class="button button1"; onclick="document.location = 'About.html'">About</button>
+<button class="button button2"; onclick="document.location = 'Commands.html'">Commands</button>
+<button class="button button3"; onclick="document.location = 'Contact.html'">Contact</button>
+<button class="button button4"; onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite Now</button>
+<!--This is to add the image-->
+<img src="widget.png" alt="F" width="400" height="400">
+
+</body>
+</html>

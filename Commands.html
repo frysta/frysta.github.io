@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html>
+<body>
+<!--This is to add text and style it-->
+<h1 style="font-family:verdana; color:white;">Commands list</h1>
+<p style="font-family:verdana; color:white;">insert commands here</p>
+<style>
+/* This is to add the background image and stretch it to fit the screen */
+body {
+  background-image: url('fbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* This is to customise the buttons - omre info on the homepage comments */
+.button {
+  border: none;
+  color: aqua;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+
+.button1 {
+  background-color: black;
+  color: white;
+  border: 2px solid #008CBA;
+  border-radius: 25px;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: White;
+}
+.button1:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button1:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+</style>
+<button class="button button1"; onclick="document.location = 'Frysta-Homepage.html'">Back to homepage</button>
+</body>
+</html>
