@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html>
+<body>
+<style>
+/* This adds the background image and stretches it to fit the screen */
+body {
+  background-image: url('fbgl.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/* This defines the location of the header and paragraph */
+h1 {
+	position:absolute;
+	top: 60px;
+	left: 100px;
+}
+p {
+	position:absolute;
+	top: 140px;
+	left: 103px;
+}
+/* This defines the location of the image */
+img {
+	position:absolute;
+	top: 175px;
+	left: 740px;
+}
+/* This is for customising a button to make it look a certain way */
+.button {
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+/* This is to make the button a colour and to make it a rounded rectangle shape */
+.button1 {
+  background-color: #6eceff;
+  color: black;
+  border: 2px solid #008CBA;
+  border-radius: 25px;
+  position:absolute;
+  top: 38px;
+  left: 750px;
+}
+/* This is for to change the colours of a button when it is hovered over */
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+/* This is for customising the borders that pop up when the button is clicked */
+.button1:active, .button:focus{
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.button1:focus, .button1:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+</style>
+<!--This is making the text a certain size and font-->
+<h1 style="font-family:verdana; color:white; font-size:50px">Oops</h1>
+<p style="font-family:verdana; color:black; font-size:20px">I don't think this page exists. Sorry</p>
+<button class="button button1"; onclick="document.location = 'index.html'">Go back to home</button>
+
+</body>
+</html>
