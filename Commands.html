@@ -1,10 +1,25 @@
 <!DOCTYPE html> 
 <html>
 <body>
-<!--This is to add text and style it-->
-<h1 style="font-family:verdana; color:white;">Commands list</h1>
-<p style="font-family:verdana; color:white;">insert commands here</p>
 <style>
+/* This is change the location of the header and text */
+h1 {
+	position:absolute;
+	top: 10px;
+	left: 50px;
+}
+p {
+	position:absolute;
+	top: 60px;
+	left: 53px;
+}
+/* This defines the location of the image */
+img {
+	position:absolute;
+	top: 1000px;
+	left: 1000px;
+        z-index: -1;
+}
 /* This is to add the background image and stretch it to fit the screen */
 body {
   background-image: url('fbg.jpg');
@@ -25,6 +40,7 @@ body {
   transition-duration: 0.4s;
   cursor: pointer;
   float: left;
+  z-index: 0;
 }
 
 .button1 {
@@ -32,6 +48,9 @@ body {
   color: white;
   border: 2px solid #008CBA;
   border-radius: 25px;
+  position: fixed;
+  top: 575px;
+  left: 1125px;
 }
 
 .button1:hover {
@@ -47,6 +66,11 @@ body {
   box-shadow: none !important;
 }
 </style>
+<!--This is to add text and style it-->
+<h1 style="font-family:verdana; color:white;">Commands list</h1>
+<p style="font-family:verdana; color:white;">insert commands here</p>
 <button class="button button1"; onclick="document.location = 'index.html'">Back to homepage</button>
+<!--This is to add the image-->
+<img src="widget.png" alt="F" width="400" height="400">
 </body>
 </html>
