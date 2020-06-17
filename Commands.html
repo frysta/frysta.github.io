@@ -1,76 +1,171 @@
-<!DOCTYPE html> 
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<title>Frysta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://froznanna.github.io/s.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-/* This is change the location of the header and text */
-h1 {
-	position:absolute;
-	top: 10px;
-	left: 50px;
-}
-p {
-	position:absolute;
-	top: 60px;
-	left: 53px;
-}
-/* This defines the location of the image */
-img {
-	position:absolute;
-	top: 1000px;
-	left: 1000px;
-        z-index: -1;
-}
-/* This is to add the background image and stretch it to fit the screen */
-body {
-  background-image: url('fbg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-/* This is to customise the buttons - omre info on the homepage comments */
-.button {
-  border: none;
-  color: aqua;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  float: left;
-  z-index: 0;
-}
-
-.button1 {
-  background-color: black;
-  color: white;
-  border: 2px solid #008CBA;
-  border-radius: 25px;
-  position: fixed;
-  top: 575px;
-  left: 1125px;
-}
-
-.button1:hover {
-  background-color: #008CBA;
-  color: White;
-}
-.button1:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button1:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 </style>
-<!--This is to add text and style it-->
-<h1 style="font-family:verdana; color:white;">Commands list</h1>
-<p style="font-family:verdana; color:white;">insert commands here</p>
-<button class="button button1"; onclick="document.location = 'index.html'">Back to homepage</button>
-<!--This is to add the image-->
-<img src="widget.png" alt="F" width="400" height="400">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-light-blue w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">About</a>
+    <a href="Commands.html" class="w3-bar-item w3-button w3-padding-large w3-light-blue">Commands</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-blue w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-onethird">
+      <h1>Commands</h1>
+      <h5 class="w3-padding-32">Frysta has a lot of commands and some of them may be a little confusing so here's a list of all of the commands with a little description so you unserstand it.</h5>
+          </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Moderation</h1>
+      <h5 class="w3-padding-32">Frysta can help you manage your server</h5>
+
+      <p class="w3-text-grey">=ban - ban a tagged user from the server <br> =kick - kick a tagged user from the server <br> =purge - delete messages (must specify the amount, 1-100) <br> =unban - unbans every banned user from the server <br> =warn - warn a tagged user for an offence <br> =warns - check how many times a tagged user has been warned in the server <p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Economy</h1>
+      <h5 class="w3-padding-32">It's like a game</h5>
+
+      <p class="w3-text-grey">=bal/=balance - check how much money a user has <br> =beg - beg for coins <br> =bet - gamble some coins <br> =daily - redeem a daily reward of 500 coins <br> =steal - steal coins from a user <br> =work - work and earn some money</p>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Info</h1>
+      <h5 class="w3-padding-32">Find out about stuff</h5>
+
+      <p class="w3-text-grey">=credits - see who made the bot <br> =define - look up words in the dictionary <br> =info - find out about your server/a user <br> =recommend - unbiased song recommendations <br> =spy - find out all the information about a user</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Generally useful</h1>
+      <h5 class="w3-padding-32">Commands which could be useful</h5>
+
+      <p class="w3-text-grey">=colour - view a colour of your choice (you need to provide a hex code) <br> =dm - use the bot to dm a user in your server (provide an ID) <br> =find - send a request for a user in your server <br> =help - this has some useful links <br> =raffle - use this to randomly raffle from a number <br> =t - translator, you must provide a language code to translate from and into. If you want to auto-detect the language use the language code 'dk' <br> =vote - hold a vote</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Sixth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Frozen</h1>
+      <h5 class="w3-padding-32">Frozen commands for frozen fans</h5>
+
+      <p class="w3-text-grey">=elsanna - view posts from elsanna subreddit <br> =frozen - pictures from frozen <br> =intotheunknown - lyrics for into the unknown</p>
+    </div>
+  </div>
+</div>
+
+<!-- Seventh Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Epic</h1>
+      <h5 class="w3-padding-32">The best commands which you have to try out</h5>
+
+      <p class="w3-text-grey">=at - toggles the autotranslate (translates every message into english) <br> =gdm - use the bot to dm a user not in your server (provide an ID) <br> =howgay - check how gay you are <br> =hug - hug a tagged user <br> =image - search for images <br> =joke - Frysta will tell a joke <br> =meme - view memes from reddit <br> =mime - use webhooks to mimic a tagged user <br> =punish = punish Frysta for misbehaving <br> =punishc - see how many times you have punished Frysta for misbehaving <br> =roast - roast a tagged user <br> =say - get Frysta to say something<p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Eigth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Cubing</h1>
+      <h5 class="w3-padding-32">For people who like to solve Rubik's cubes</h5>
+
+      <p class="w3-text-grey">=2 - generate a 2 x 2 scramble <br> =3 - generate a 3 x 3 scramble</p>
+    </div>
+  </div>
+</div>
+
+<!-- Nineth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Everything Else</h1>
+      <h5 class="w3-padding-32">The rest of the commands (yes there are more)</h5>
+
+      <p class="w3-text-grey">=donate - see the patreons <br> =emoji - get the IDs of all of the custom emojis in your server <br> =inv/=invite - get an invite to the bot or give your bot ID and generate an invite link for your bot <br> =mlp - check which my little pony character you are <br> =pfp - look at a user's profile picture <br> =post - post the server count to the bots for discord website <br> =test - check the ping of Frysta</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>

@@ -1,100 +1,93 @@
-<!DOCTYPE html> 
-<html>
-<body>
-<h1 style="font-family:verdana; color:white;">Contact page</h1>
-<p style="font-family:verdana; color:white;">If you need help with the bot you can contact me via Discord</p>
+<!DOCTYPE html>
+<html lang="en">
+<title>Frysta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://froznanna.github.io/s.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-/* This adds the background image and stretches it to fit the screen */
-body {
-  background-image: url('fbgl.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-/* This is change the location of the header and text */
-h1 {
-	position:absolute;
-	top: 10px;
-	left: 50px;
-}
-p {
-	position:absolute;
-	top: 60px;
-	left: 53px;
-}
-/* This is to customize the buttons - more on the homepage comments */
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button1 {
-  background-color: #6eceff;
-  color: black;
-  border: 2px solid #008CBA;
-  border-radius: 25px;
-  position:absolute;
-  top: 40px;
-  left: 550px;
-}
-
-.button1:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button1:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button1:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.button2 {
-  background-color: #009afe;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  position:absolute;
-  top: 575px;
-  left: 1075px;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button2:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button2:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 widgetbot {
-  position:absolute;
-  top: 100px;
-  left: 53px;
+  max-width: 100%;
+  max-height: 100%
 }
 </style>
-<button class="button button1"; onclick="document.location = 'https://discord.gg/fJMdFvm'">Join the support server</button>
-<button class="button button2"; onclick="document.location = 'index.html'">Back to homepage</button>
-<!--This is to add a discord embed - so users can ask from the website-->
-<widgetbot
-  server="703687777644052490"
-  channel="717096956073214062"
-  width="800"
-  height="430"
-  shard="https://e.widgetbot.io"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-light-blue w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">About</a>
+    <a href="Commands.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Commands</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large w3-light-blue">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-blue w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <a href="Commands.html" class="w3-bar-item w3-button w3-padding-large">Commands</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Contact</h1>
+      <h5 class="w3-padding-32">If you ever have any issues or questions with the bot you can contact me via Discord.</h5>
+
+      <p class="w3-text-grey">The button below is an invite to the support server. If you click it you can join and ask questions. If you scroll down there is also a screen which links you to the support server, you can ask questions from there as well.</p>
+          </div>
+
+    <div class="w3-twothird">
+    <button class="w5-button w3-white w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://discord.com/invite/fJMdFvm'">Join support server</button>
+     </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>Discord</h1>
+      <h5 class="w3-padding-32">Here is our server! You can ask any questions in the support channel</h5>
+      <!--This is to add a discord embed - so users can ask from the website-->
+      <widgetbot
+        server="703687777644052490"
+        channel="717096956073214062"
+        width="800"
+        height="430"
+        shard="https://e.widgetbot.io"
+      ></widgetbot>
+      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>

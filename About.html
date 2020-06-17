@@ -1,134 +1,86 @@
-<!DOCTYPE html> 
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<title>Frysta</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://froznanna.github.io/s.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-/* This adds the background image and stretches it to fit the screen */
-/* This defines the location of the header and paragraph */
-h1 {
-	position:absolute;
-	top: 10px;
-	left: 50px;
-}
-p {
-	position:absolute;
-	top: 60px;
-	left: 53px;
-}
-body {
-  background-image: url('fbgl.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-/* This is to customise the buttons - more info on the comments on the homepage */
-.button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  float: left;
-}
-.button1 {
-  background-color: #009afe;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  position:absolute;
-  top: 100px;
-  left: 53px;
-}
-
-.button1:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button1:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button1:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.button2 {
-  background-color: #009afe;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  position:absolute;
-  top: 100px;
-  left: 173px;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button2:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button2:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.button3 {
-  background-color: #009afe;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  position:absolute;
-  top: 100px;
-  left: 288px;
-}
-
-.button3:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button3:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button3:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
-.button4 {
-  background-color: #009afe;
-  color: white;
-  border: 2px solid white;
-  border-radius: 25px;
-  position:absolute;
-  top: 100px;
-  left: 423px;
-}
-
-.button4:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.button4:active, .button:focus{
-  border: 2px solid black;
-  border-radius: 25px;
-}
-.button4:focus, .button1:active {
-  outline: none !important;
-  box-shadow: none !important;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
 </style>
-<!--This is to add the text and style it-->
-<h1 style="font-family:verdana; color:white">About</h1>
-<p style="font-family:verdana; color:white">Frysta is a Frozen 2 themed multipurpose bot. It has some nice features such as economy</p>
-<button class="button button1"; onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite</button>
-<button class="button button2"; onclick="document.location = 'https://botsfordiscord.com/bot/698014694811893861/vote'">Vote</button>
-<button class="button button3"; onclick="document.location = 'https://patreon.com/frysta'">Donate</button>
-<button class="button button4"; onclick="document.location = 'index.html'">Back to homepage</button>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-light-blue w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Home</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-padding-large w3-light-blue">About</a>
+    <a href="Commands.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Commands</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-blue">Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-blue w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="Commands.html" class="w3-bar-item w3-button w3-padding-large">Commands</a>
+    <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About</h1>
+      <h5 class="w3-padding-32">Frysta is a very epic Frozen 2 Bot. It has currency commands, translators, dictionary, image search and more! Check out the commands page for a full list of all of the commands.</h5>
+
+      <p class="w3-text-grey">Below are buttons which will link you to epic places. You should try clicking one. The Invite button invites the bot to your server. The vote button will take you to the bots for discord site where you can find more information about our bot and vote for it. The donate button is only for rich people. If you click it it gives me money :)</p>
+          </div>
+
+    <div class="w3-third w3-center">
+      <img src="widget1.png">
+    </div>
+    <div class="w3-twothird">
+    <button class="w5-button w3-white w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite</button>
+    <button class="w5-button w3-white w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://botsfordiscord.com/bot/698014694811893861/vote'">Vote</button>
+    <button class="w5-button w3-white w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://patreon.com/frysta'">Donate</button>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <div class="w3-onethird">
+      <h1>What</h1>
+      <h5 class="w3-padding-32">What is Frysta and why does it exist?</h5>
+
+      <p class="w3-text-grey">Frysta is a discord bot, based around Frozen 2 and the frozen franchise. It is a 'general multipurpose' bot which means that it does a bunch of epic stuff. It has moderation, currency, helpful search functions - basically everything you need to make your server epic. But why does Frysta exist? Frysta was created one day when i was assigned a project in English class (yes english class and not computing). The project was to expand a field of study and so i randomly chose to make a discord bot in js. In retrospect this probably was not the smartest idea since i did not know any javascript and was relatively new to discord.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
