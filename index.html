@@ -1,88 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="icon" href="https://frysta.github.io/src/web.png">
 <title>Frysta</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://frysta.github.io/src/s.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+<link rel="icon" href="https://frysta.github.io/src/web.png">
+<link rel="stylesheet" href="https://frysta.github.io/src/styles.css">
 <body>
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar black w3-card w3-left-align w3-large text-white">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large hover-black w3-large black text-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-padding-large hover-black black">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Contact</a>
-  </div>
 
-  <!-- Navbar for small screens -->
-  <div id="navDemo" class="w3-bar-block black w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Contact</a>
-  </div>
+<div class="navbar">
+  <a href="https://frysta.github.io" class="active">Home</a>
+  <a href="https://frysta.github.io/About">About</a>
+  <a href="https://frysta.github.io/Commands">Commands</a>
+  <a href="https://frysta.github.io/Contact">Contact</a>
 </div>
 
-<!-- Header -->
-<header class="w3-container black2 w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">FRYSTA</h1>
-  <p class="w3-xlarge">A Frozen 2 Discord Bot</p>
-  <button class="button1 black2 w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite Now</button>
-</header>
-<!-- First Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Translator</h1>
-      <h5 class="w3-padding-32">We are able to translate from and into 20+ different languages for you. There is auto-detect and also an autotranslator!</h5>
+<div class="text centre black">
+  <h1 class="title">FRYSTA</h1>
+  <p class="large">A Frozen Discord Bot</p>
+  <button onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite</button>
+  <br><br><br>
+</div>
 
-      <p class="text-grey">To translate from one language to another you need their language codes. (This is the command: '=t (language code) (language code) (message you need to translate) - Note that the first language code it the one you translate from, the second is the one you translate to.)E.g. en (English) and de (German). If i type '=t en de Hello, how are you?' then the output will be 'Hallo, Wie geht's'. The autodetect will translate into English. To use it type '=t dk (message)' E.g. '=t dk estoy muy cansado' and the output will be 'I am very tired'. The autotranslator is similar and will translate every message into english. It can be toggled with the command '=at'.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <img src="https://frysta.github.io/src/ats2.png" alt="Translator">
-    </div>
+<div class="container">
+  <div class="text flex">
+    <h1>Translator</h1>
+    <h4>Frysta can translate to 20+ languages. There is automatic language detection and automatic translation to English</h4>
+    <p>The format for translation is: =t [original language] [target language] [message]<br>For example: =t en de Hello, how are you? -> Hallo, wie geht's</p>
+    <p>The format for detecting the language is: =t dk [message]<br>For example: =t dk Estoy muy cansado -> I am very tired</p>
+    <p>Autotranslator works in a similar manner, and is toggled by =at</p>
+  </div>
+  <div class="img">
+    <img src="https://frysta.github.io/src/ats2.png">
   </div>
 </div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-right">
-      <h1>Webhooks</h1>
-      <h5 class="w3-padding-32">The bot can make webhooks to mimic users</h5>
-
-      <p class="text-grey">You can use the comand '=mime' and the bot will create a webhook to mimic the user you tagged</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <img src="https://frysta.github.io/src/wbh2.png" alt="Webhooks">
-    </div>
-
+<div class="container black">
+  <div class="text flex">
+    <h1>Webhooks</h1>
+    <h4>Frysta can use webhooks to mimic other users</h4>
+    <p>The format for using webhooks is: =mime [target user] [message]<br>For example: =mime @Froz_n.anna Wow this bot is really cool</p>
+    <br><br><br><br>
+  </div>
+  <div class="img">
+    <img src="https://frysta.github.io/src/wbh2.png">
   </div>
 </div>
-
-<div class="w3-container black2 w3-center w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
-</div>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 </body>
 </html>

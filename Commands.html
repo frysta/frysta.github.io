@@ -1,149 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="icon" href="https://frysta.github.io/src/web.png">
 <title>Frysta</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://frysta.github.io/src/s.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
-<body>
-  <!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar black w3-card w3-left-align w3-large text-white">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large hover-black w3-large black text-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-padding-large hover-black black">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Contact</a>
-  </div>
+<link rel="icon" href="https://frysta.github.io/src/web.png">
+<link rel="stylesheet" href="https://frysta.github.io/src/styles.css">
+<body class="centre">
 
-  <!-- Navbar for small screens -->
-  <div id="navDemo" class="w3-bar-block black w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Contact</a>
-  </div>
+<div class="navbar">
+  <a href="https://frysta.github.io">Home</a>
+  <a href="https://frysta.github.io/About">About</a>
+  <a href="https://frysta.github.io/Commands" class="active">Commands</a>
+  <a href="https://frysta.github.io/Contact">Contact</a>
 </div>
 
-<!-- First Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Commands</h1>
-      <h5 class="w3-padding-32">Frysta has a lot of commands and some of them may be a little confusing so here's a list of all of the commands with a little description so you understand it.</h5>
-          </div>
-  </div>
+<div class="text">
+  <h1>Commands</h1>
+  <h5>A list of commands and descriptions</h5>
 </div>
 
-<!-- Second Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Economy</h1>
-      <h5 class="w3-padding-32">It's like a game</h5>
-      <p class="w3-text-grey">=balance/=bal [tagged user] - Check how much money you / the tagged user has <br> =beg - Beg for coins <br> =bet (amount of coins) - Bet coins <br> =buy (item) - Purchase an item from the shop <br> =daily - redeem a daily reward of 2000 coins <br> =inventory [tagged user] - Check an inventory <br> =leaderboard - See how rich you are in your server <br> =shop [item] - Check the shops for items <br> =work - Work for coins</p>
-    </div>
-  </div>
+<div class="text black">
+  <h1>Economy</h1>
+  <h5>In-bot currency system</h5>
+  <ul class="list">
+    <li>=balance/ =bal [tagged user] - Check how much money you / the tagged user has</li>
+    <li>=beg - Beg for coins</li>
+    <li>=bet (amount of coins) - Bet coins</li>
+    <li>=buy (item) - Purchase an item from the shop</li>
+    <li>=daily - redeem a daily reward of 2000 coins</li>
+    <li>=inventory [tagged user] - Check an inventory</li>
+    <li>=leaderboard - See how rich you are in your server</li>
+    <li>=shop [item] - Check the shops for items</li>
+    <li>=work - Work for coins</li>
+  </ul>
 </div>
 
-<!-- Third Grid -->
-<!--
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Frozen</h1>
-      <h5 class="w3-padding-32">Frozen commands</h5>
-      <p class="w3-text-grey">=annabacc - Pictures of Anna's back <br> =brunibacc - Pictures of Bruni's back <br> =elsabacc - Pictures of Elsa's back <br> =frozen - See images from frozen movies <br> =quiz - Frozen quiz <br> =r/frozen - Get reddit posts from r/frozen <br> =trivia - Frozen trivia questions <br> =triviastats [tagged user] - See how many trivia questions a user has answered</p>
-    </div>
-  </div>
-</div> 
--->
-<!-- This section removed 6.5.25 -->
-
-<!-- Fourth Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Fun</h1>
-      <h5 class="w3-padding-32">Fun commands</h5>
-      <p class="w3-text-grey">=8ball (question) - Ask a yes/No question <br> =discriminator [discriminator] - Find other people by discriminator <br> =hug (tagged user) - Hug a user <br> =joke - hear a joke from reddit <br> =meme - Get memes from meme subreddits <br> =mime (tagged user) (message) - Mime a user with webhooks <br> =mimembed (tagged user) (colour of embed) (title of embed) (text in embed) <br> =raffle (number) - Pick a random number <br> =roast [tagged user] - Roast someone <br> =say (message you want Frysta to say) - Frysta says something <br> =showerthoughts - Get posts from r/showerThoughts <br> =tifu - Get posts from r/TIFU</p>
-    </div>
-  </div>
+<div class="text">
+  <h1>Fun</h1>
+  <h5>Miscellaneous commands</h5>
+  <ul class="list">
+    <li>=8ball (question) - Ask a yes/No question</li>
+    <li>=discriminator [discriminator] - Find other people by discriminator</li>
+    <li>=hug (tagged user) - Hug a user</li>
+    <li>=joke - hear a joke from reddit</li>
+    <li>=meme - Get memes from meme subreddits</li>
+    <li>=mime (tagged user) (message) - Mime a user with webhooks</li>
+    <li>=mimembed (tagged user) (colour of embed) (title of embed) (text in embed)</li>
+    <li>=raffle (number) - Pick a random number</li>
+    <li>=roast [tagged user] - Roast someone</li>
+    <li>=say (message you want Frysta to say) - Frysta says something</li>
+    <li>=showerthoughts - Get posts from r/showerThoughts</li>
+    <li>=tifu - Get posts from r/TIFU</li>
+  </ul>
 </div>
 
-<!-- Fifth Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Image</h1>
-      <h5 class="w3-padding-32">Commands which allow you to photoshop</h5>
-      <p class="w3-text-grey">=always (text) - Generate an astronaut meme (always has been) with your custom text <br> =anna [tagged user] - You become Anna <br> =clyde (text) - Make Clyde say something <br> =colour (colour hex or name) - See a colour <br> =detect (image URL) - detect the majority colour of an image <br> =drake [tagged user] - Generate a drake meme with your custom text <br> =elsa [tagged user] - You become Elsa <br> =image (search query) - Perform an image search <br> =quote (tagged user) (text) - Generate an image where a user says something <br> =stonks (text) - Generate a stonks meme with your custom text</p>
-    </div>
-  </div>
+<div class="text black">
+  <h1>Image</h1>
+  <h5>Image manipulation and search</h5>
+  <ul class="list">
+    <li>=always (text) - Generate an astronaut meme (always has been) with your custom text</li>
+    <li>=anna [tagged user] - You become Anna</li>
+    <li>=clyde (text) - Make Clyde say something</li>
+    <li>=colour (colour hex or name) - See a colour</li>
+    <li>=detect (image URL) - detect the majority colour of an image</li>
+    <li>=drake [tagged user] - Generate a drake meme with your custom text</li>
+    <li>=elsa [tagged user] - You become Elsa</li>
+    <li>=image (search query) - Perform an image search</li>
+    <li>=quote (tagged user) (text) - Generate an image where a user says something</li>
+    <li>=stonks (text) - Generate a stonks meme with your custom text</li>
+  </ul>
 </div>
 
-<!-- Sixth Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Info</h1>
-      <h5 class="w3-padding-32">Get information</h5>
-      <p class="w3-text-grey">=commands - Display a list of commands <br> =credits - See who contributed to make Frysta <br> =define [word] - Get the Urban dictionary defenition for a word <br> =donate - Get links to donate to frysta <br> =emoji (emoji) - Get the emoji as a .png <br> =emojis - Get a list of all of the custom emojis in the server <br> =google (search query) - look something up <br> =help - Get links <br> =howgay [tagged user] - Check the sexuality of a user (this is a joke and will not determine your actual sexuality) <br> =id (tagged user/channel/role) - Get ID <br> =info (user/server/frysta) - Get information about a user or the server or Frysta <br> ==invite [bot ID] - Sends an invite link with the bot ID <br> =languages - Get a list of all language codes <br> =music - List of all music commands <br> =pfp [tagged user] - Get a link to a profile picture <br> =settings - View the settings for your server <br> =test - Check the ping of the bot</p>
-    </div>
-  </div>
+<div class="text">
+  <h1>Info</h1>
+  <h5>Obtain general information about Discord</h5>
+  <ul class="list">
+    <li>=commands - Display a list of commands</li>
+    <li>=credits - See who contributed to make Frysta</li>
+    <li>=define [word] - Get the Urban dictionary defenition for a word</li>
+    <li>=emoji (emoji) - Get the emoji as a .png</li>
+    <li>=emojis - Get a list of all of the custom emojis in the server</li>
+    <li>=google (search query) - look something up</li>
+    <li>=help - Get links</li>
+    <li>=id (tagged user/channel/role) - Get ID</li>
+    <li>=info (user/server/frysta) - Get information about a user or the server or Frysta</li>
+    <li>=invite [bot ID] - Sends an invite link with the bot ID</li>
+    <li>=languages - Get a list of all language codes</li>
+    <li>=music - List of all music commands</li>
+    <li>=pfp [tagged user] - Get a link to a profile picture</li>
+    <li>=settings - View the settings for your server</li>
+    <li>=test - Check the ping of the bot</li>
+  </ul>
 </div>
 
-<!-- Seventh Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Moderation</h1>
-      <h5 class="w3-padding-32">Frysta can help you manage your server</h5>
-      <p class="w3-text-grey">=ban (tagged user) [reason] - Bans a user from the server <br> =esnipe [number] - Recover edited messages <br> =hackban (User ID) - Ban a user who is not currently in your server <br> =kick (tagged user) [reason] - Kick a user from the server <br> =mute (tagged user) [time] - Gives the tagged user the role 'muted' <br> =purge (number from 1 - 100) - Deletes messages <br> =snipe [number] - Recover deleted messages <br> =unban (Banned User ID) [reason] - Unbans a banned user from your server <br> =unbanall [reason] - Unbans every banned user from the server <br> =unmute (tagged user) - Removes the 'muted' role from the tagged user<p>
-    </div>
-  </div>
+<div class="text black">
+  <h1>Moderation</h1>
+  <h5>Manage server responsibilities</h5>
+  <ul class="list">
+    <li>=ban (tagged user) [reason] - Bans a user from the server</li>
+    <li>=esnipe [number] - Recover edited messages</li>
+    <li>=hackban (User ID) - Ban a user who is not currently in your server</li>
+    <li>=kick (tagged user) [reason] - Kick a user from the server</li>
+    <li>=mute (tagged user) [time] - Gives the tagged user the role 'muted'</li>
+    <li>=purge (number from 1 - 100) - Deletes messages</li>
+    <li>=snipe [number] - Recover deleted messages</li>
+    <li>=unban (Banned User ID) [reason] - Unbans a banned user from your server</li>
+    <li>=unbanall [reason] - Unbans every banned user from the server</li>
+    <li>=unmute (tagged user) - Removes the 'muted' role from the tagged user</li>
+  </ul>
 </div>
 
-<!-- Eighth Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Music</h1>
-      <h5 class="w3-padding-32">Voice channel commands</h5>
-      <p class="w3-text-grey">=bassboost [level] - Bassboost the song currrently playing! <br> =join/=j - Join the voice channel <br> =leave/=l - Leave the voice channel and stop the music <br> =loop/lp - Loop the current track! <br> =lyrics/=ly (song name) - Search for lyrics for a song <br> =nowplaying/=np - Check which song is currently playing <br> =pause/=p - pause the player <br> =play (song name) - Searches for your song and returns a selection to play from <br> =queue/=q - Check the queue and the next songs which will be played <br> =resume/=r - unpause the player <br> =shuffle/=sf - shuffle the queue <br> =skip/=s - Skip to the next track in the queue <br> =volume/=v (number) - Change the volume of the player (1-100)</p>
-    </div>
-  </div>
+<div class="text">
+  <h1>Music</h1>
+  <h5>Commands which apply to voice channels</h5>
+  <ul class="list">
+    <li>=bassboost [level] - Bassboost the song currrently playing!</li>
+    <li>=join/=j - Join the voice channel</li>
+    <li>=leave/=l - Leave the voice channel and stop the music</li>
+    <li>=loop/lp - Loop the current track!</li>
+    <li>=lyrics/=ly (song name) - Search for lyrics for a song</li>
+    <li>=nowplaying/=np - Check which song is currently playing</li>
+    <li>=pause/=p - pause the player</li>
+    <li>=play (song name) - Searches for your song and returns a selection to play from</li>
+    <li>=queue/=q - Check the queue and the next songs which will be played</li>
+    <li>=resume/=r - unpause the player</li>
+    <li>=shuffle/=sf - shuffle the queue</li>
+    <li>=skip/=s - Skip to the next track in the queue</li>
+    <li>=volume/=v (number) - Change the volume of the player (1-100)</li>
+  </ul>
 </div>
 
-<!-- Nineth Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-onethird">
-      <h1>Utility</h1>
-      <h5 class="w3-padding-32">Important useful commands</h5>
-      <p class="w3-text-grey">=autobump - Toggle bump reminders <br> =autotranslate - toggle automatic translation <br> =create (time) (channel mention) (prize) - Create a giveaway <br> =custom-remove [command name] - Remove a custom command <br> =custom [command name] [command response] - Create a custom command! <br> =custominfo [command name or tagged user] - Get information about a custom command <br> =customs - View all custom commands in your server <br> =reminder (time) (reason) - Set a reminder <br> =t (language code) (language code) (text) - Translate <br> =vote (topic) - Set up a vote</p>
-    </div>
-  </div>
+<div class="text black">
+  <h1>Utility</h1>
+  <h5>Configuration commands for Frysta</h5>
+  <ul class="list">
+    <li>=autobump - Toggle bump reminders</li>
+    <li>=autotranslate - toggle automatic translation</li>
+    <li>=create (time) (channel mention) (prize) - Create a giveaway</li>
+    <li>=custom-remove [command name] - Remove a custom command</li>
+    <li>=custom [command name] [command response] - Create a custom command!</li>
+    <li>=custominfo [command name or tagged user] - Get information about a custom command</li>
+    <li>=customs - View all custom commands in your server</li>
+    <li>=reminder (time) (reason) - Set a reminder</li>
+    <li>=t (language code) (language code) (text) - Translate</li>
+    <li>=vote (topic) - Set up a vote</li>
+  </ul>
 </div>
 
-<div class="w3-container black2 w3-center w3-padding-64">
-  <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
-</div>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 </body>
 </html>

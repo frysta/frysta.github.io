@@ -1,64 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 <title>Frysta</title>
 <link rel="icon" href="https://frysta.github.io/src/web.png">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://frysta.github.io/src/s.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-widgetbot {
-  max-width: 100%;
-  max-height: 100%
-}
-</style>
+<link rel="stylesheet" href="https://frysta.github.io/src/styles.css">
 <body>
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar black w3-card w3-left-align w3-large text-white">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large hover-black w3-large black text-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-padding-large hover-black black">Contact</a>
-  </div>
 
-  <!-- Navbar for small screens -->
-  <div id="navDemo" class="w3-bar-block black w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-padding-large hover-black text-white">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Commands</a>
-  </div>
-</div>
-<!-- First Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Contact</h1>
-      <h5 class="w3-padding-32">If you ever have any issues or questions with the bot you can contact me via Discord.</h5>
-          </div>
-    <div class="w3-twothird">
-    <button class="button1 dark-grey w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://discord.com/invite/fJMdFvm'">Join support server</button>
-     </div>
-  </div>
-</div>
-<div class="w3-container black2 w3-center w3-padding-64">
-  <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
+<div class="navbar">
+  <a href="https://frysta.github.io">Home</a>
+  <a href="https://frysta.github.io/About">About</a>
+  <a href="https://frysta.github.io/Commands">Commands</a>
+  <a href="https://frysta.github.io/Contact" class="active">Contact</a>
 </div>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
+<div class="text">
+  <h1>Contact</h1>
+  <p>Join our discord support server</p>
+  <button onclick="document.location='https://discord.com/invite/fJMdFvm'">Discord</button>
+</div>
 
 </body>
 </html>

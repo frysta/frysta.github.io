@@ -1,104 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="icon" href="https://frysta.github.io/src/web.png">
 <title>Frysta</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://frysta.github.io/src/s.css">
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+<link rel="icon" href="https://frysta.github.io/src/web.png">
+<link rel="stylesheet" href="https://frysta.github.io/src/styles.css">
 <body>
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar black w3-card w3-left-align w3-large text-white">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large hover-black w3-large black text-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Home</a>
-    <a href="https://frysta.github.io/About" class="w3-bar-item w3-button w3-padding-large hover-black black">About</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large hover-black">Contact</a>
-  </div>
 
-  <!-- Navbar for a smaller screen -->
-  <div id="navDemo" class="w3-bar-block black w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="https://frysta.github.io" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Home</a>
-    <a href="https://frysta.github.io/Commands" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Commands</a>
-    <a href="https://frysta.github.io/Contact" class="w3-bar-item w3-button w3-padding-large hover-black text-white">Contact</a>
-  </div>
+<div class="navbar">
+  <a href="https://frysta.github.io">Home</a>
+  <a href="https://frysta.github.io/About" class="active">About</a>
+  <a href="https://frysta.github.io/Commands">Commands</a>
+  <a href="https://frysta.github.io/Contact">Contact</a>
 </div>
 
-<!-- First Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>About</h1>
-      <h5 class="w3-padding-32">Frysta is a very epic Frozen 2 Bot. It has currency commands, translators, dictionary, image search and more! Check out the commands page for a full list of all of the commands.</h5>
-
-      <p class="text-grey">Here are some useful links. The Invite button invites the bot to your server. The vote button will take you a new voting page with links to bot lists you can vote for Frysta on. The bot lists are where you can find more information about our bot and vote for it. The donate button is to help support the growth of Frysta :)</p>
-          </div>
-    <div class="w3-twothird">
-    <button class="button1 dark-grey w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite</button>
-    <button class="button1 dark-grey w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://frysta.github.io/Vote'">Vote</button>
-    <!-- <button class="button1 dark-grey w3-padding-large w3-large w3-margin-top"; onclick="document.location = 'https://patreon.com/frysta'">Donate</button> -->
-    </div>
-  </div>
+<div class="text">
+  <h1>About</h1>
+  <h5>Frysta is a multipurpose discord bot, with a currency system, translation, dictionary, image manipulation and more! Check out the commands page for a full rundown.</h5>
+  <h2>Frysta's purpose</h2>
+  <h5>Frysta makes executing bulk commands accessible - i.e. bulk deleting messages, bulk unbanning members. Another useful feature is auto-translation, which translates any language into english</h5>
+  <button onclick="document.location = 'https://discordapp.com/oauth2/authorize?client_id=698014694811893861&scope=bot'">Invite</button>
+  <button onclick="document.location = 'https://frysta.github.io/Vote'">Vote</button>
 </div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-
-    <div class="w3-onethird">
-      <h1>What</h1>
-      <h5 class="w3-padding-32">What is Frysta and why does it exist?</h5>
-      <p class="text-grey">Frysta is a frozen discord bot. It is a multipurpose discord bot and has a wide range of features (check the commands page!) Frysta can be useful because it gives you accessebility to perform actions which otherwise would be very difficult with discord itself (for example unbanning every member can be done with Frysta in one command whereas with Discord you would have to go through the banned list and individually revoke each one. Another useful feature would be the translator - There is a feature which auotmatically translates messages in other languages into english, This is good because you do not have to open google translate (or DeepL) and type in the message; you can do it all from the comforts of discord.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Third Grid -->
-<div class="w3-row-padding dark-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-
-    <div class="w3-onethird">
-      <h1>Terms of service</h1>
-      <h5 class="w3-padding-32">Frysta does not own anything</h5>
-      <p class="text-grey">Frysta can perform but does not own the following - Music (from youtube), Translations (Google translate), Lyrics (From song authors), Memes (from Reddit), Image searches (from Google). This also means Frysta is not responsible for any advice or offence these may cause.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Fourth Grid 
-<div class="w3-row-padding black2 w3-padding-64 w3-container">
-  <div class="w3-content">
-
-    <div class="w3-onethird">
-      <h1>Privacy Policy</h1>
-      <h5 class="w3-padding-32">What data we keep/don't</h5>
-      <p class="text-grey">You may have noticed that some commands on Frysta show information about you - such as when your account was created. I can assure you that we will not sell any of your data to the Chinese government (The only data we keep are server / channel / user IDs). By using Frysta you are agreeing to let Frysta save your user ID (This is for using currency commands) and if you turn on server features such as autotranslate / Welcome messages your server ID and channel ID will be saved as well. If you want to wipe yourself from our database you can contact a developer through our support server.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container dark-grey w3-center w3-padding-64">
-  <h1 class="w3-margin w3-xlarge">The best Frozen 2 Discord Bot</h1>
-</div>
-Removed - 8.11.25 -->
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 </body>
 </html>

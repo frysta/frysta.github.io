@@ -1,8 +1,78 @@
+/*Stylesheet for frysta.github.io - Last updated: 8.11.25*/
+
+.navbar {
+  background-color: #000000;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  transition-duration: 0.2s;
+}
+
+.navbar a:hover {
+  color: #31d710;
+}
+
+.navbar a.active {
+  color: #31d710;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #111212;
   color: #FFFFFF;
   user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.centre {
+  text-align: center;
+}
+
+.large {
+  font-size: 24px;
+}
+
+.list {
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 37%;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.flex {
+  flex-basis: 65%
+}
+
+.img {
+  flex-basis: 30%;
 }
 
 button {
@@ -19,4 +89,16 @@ button:hover {
   cursor: pointer;
   background-color: #FFFFFF;
   color: #000000;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
 }
