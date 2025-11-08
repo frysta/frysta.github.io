@@ -144,5 +144,33 @@
   </ul>
 </div>
 
+<button id="TopButton">↑</button>
+
 </body>
+
+<script>
+let tBtn = document.getElementById('TopButton');
+
+window.onscroll = function() {
+  hideBtn();
+}
+
+function hideBtn() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    tBtn.style.display = "block";
+  } else {
+    tBtn.style.display = "none";
+  }
+}
+
+function scrollTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });
+}
+
+tBtn.addEventListener('click', scrollTop);
+</script>
+
 </html>
